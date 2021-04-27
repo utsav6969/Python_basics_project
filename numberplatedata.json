@@ -1,0 +1,57 @@
+{
+  "states" : [
+    {
+      "state_name": "Bihar",
+      "Group_of_letters": "BR",
+      "Location": {
+        "Motihari": "05",
+        "Muzaffarpur": "06",
+        "Darbhanga": "07",
+        "Patna": "07"
+      }
+    },
+    {
+      "state_name": "Delhi",
+      "Group_of_letters": "DL",
+      "Location": {
+        "Dwarka": "09",
+        "Rohini": "11",
+        "Gurgaon": "15",
+        "Mall Road": "01"
+      }
+    },
+    {
+      "state_name": "Punjab",
+      "Group_of_letters": "PB",
+      "Location": {
+        "Chandigarh": "01",
+        "Amritsar": "02",
+        "Jalandhar": "08",
+        "Patiala": "11"
+      }
+
+    },
+    {
+      "state_name": "Uttar Pradesh",
+      "Group_of_letters": "UP",
+      "Location": {
+        "Ghaziabad": "14",
+        "Noida": "16",
+        "Lucknow": "32",
+        "Hapur": "37",
+        "Sonbhadra": "64"
+      }
+
+      },
+    {
+      "state_name": "Maharashtra",
+      "Group_of_letters": "MH",
+      "Location": {
+        "Mumbai": "01",
+        "Pune": "12",
+        "Nashik": "15",
+        "Panvel": "46"
+      }
+    }
+  ]
+}
