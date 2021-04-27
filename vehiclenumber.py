@@ -2,7 +2,7 @@ import json
 import random
 import string
 
-jsonfile = open('numberplatedata.json', )
+jsonfile = open('vehicledata.json', )
 jsondata = json.load(jsonfile)
 
 state = input("Enter the name of your state")
