@@ -7,7 +7,7 @@ class Vehicle:
 
 
     def returnvehiclenumber(self,statename,location):
-        with open('numberplatedata.json', 'r') as json_file:
+        with open('vehicledata.json', 'r') as json_file:
             data = json.load(json_file)
             for i in data["states"]:
                 if (i["state_name"] == statename):
@@ -28,7 +28,7 @@ class Vehicle:
     def adddata(self, newstatename, newstatecode, location):
 
 
-        def write_json(data, filename='numberplatedata.json'):
+        def write_json(data, filename='vehicledata.json'):
             with open(filename, 'w') as file:
                 json.dump(data, file, indent=4)
 
@@ -38,7 +38,7 @@ class Vehicle:
             "location": location
         }
 
-        with open('numberplatedata.json', 'r+') as json_file:
+        with open('vehicledata.json', 'r+') as json_file:
             data = json.load(json_file)
             temp = data['states']
             temp.append(newelement)
@@ -46,11 +46,11 @@ class Vehicle:
             print("Data Added")
 
     def removedata(self, dstatename):
-        def write_json(data, filename='numberplatedata.json'):
+        def write_json(data, filename='vehicledata.json'):
             with open(filename, 'r+') as file:
                 json.dump(data, file, indent=4)
 
-        with open('numberplatedata.json', 'r+') as json_file:
+        with open('vehicledata.json', 'r+') as json_file:
             data = json.load(json_file)
             for i in data["states"]:
 
@@ -63,11 +63,11 @@ class Vehicle:
 
     def update(self, statename, statecode, location):
 
-        def write_json(data, filename='numberplatedata.json'):
+        def write_json(data, filename='vehicledata.json'):
             with open(filename, 'r+') as file:
                 json.dump(data, file, indent=4)
 
-        jsonfile = open('numberplatedata.json', )
+        jsonfile = open('vehicledata.json', )
         jsondata = json.load(jsonfile)
 
         for i in jsondata["states"]:
